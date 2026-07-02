@@ -1,18 +1,36 @@
-# Simple Network Scanner 🛡️
+# Network Scanner
 
-A lightweight and efficient Python script to scan your local network for active devices.
+A simple Python script that scans a network using ping and saves active IP addresses to a text file.
 
 ## Features
-- **Customizable**: Set your own network range and output filename.
-- **Auto-formatting**: Automatically adds missing extensions (.txt) and dots (.).
-- **User-friendly**: Simple command-line interface.
+
+- Scan a custom network range
+- Save active IPs to a text file
+- Lightweight
+- No external libraries required
+
+## Requirements
+
+- Python 3.x
+- Windows
 
 ## Usage
-1. Clone this repository:
-   `git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git`
-2. Run the script:
-   `python scanner.py`
-3. Enter your network (e.g., `192.168.1.`) and filename.
 
-## Disclaimer
-This tool is for educational and authorized network testing purposes only. Use responsibly on networks you have permission to scan.
+```bash
+python scanner.py
+```
+
+Example:
+
+```
+Enter network (Example: 192.168.1.): 192.168.1
+Enter output filename: result
+```
+
+Output:
+
+```
+192.168.1.1
+192.168.1.15
+192.168.1.20
+```
